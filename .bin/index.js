@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const path=require("path");
 
-require("@babel/register") ({
+require("@babel/register")({
   exclude:/node_modules/,
   presets: [ 
     require.resolve("@babel/preset-env")
@@ -18,5 +18,5 @@ require("@babel/register") ({
 });
 
 require("@cyber-tools/cli-utils/initial");
-require("@/configs/runtime.config");
+require("../configs/runtime.config");
 require("../index");
