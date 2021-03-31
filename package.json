@@ -4,7 +4,11 @@
   "description": "用于创建单命令行工具的脚手架",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir=dist",
+    "prepublishOnly": "npm run build && npm version major && git push"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "cli",
