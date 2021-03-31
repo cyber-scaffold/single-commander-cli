@@ -1,5 +1,5 @@
 
 
-module.exports=async ()=>{
+export default async ()=>{
   console.log("services");
 };

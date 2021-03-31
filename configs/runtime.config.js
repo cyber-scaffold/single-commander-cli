@@ -1,5 +1,5 @@
-const {version,description}=require("@/package.json");
-const { ArgumentParser } = require("argparse");
+import {version,description} from "@/package.json";
+import { ArgumentParser } from "argparse";
 
 const parser = new ArgumentParser({
   description: description
@@ -8,4 +8,4 @@ const parser = new ArgumentParser({
 parser.add_argument("-v", "--version", { action: "version", version });
 parser.add_argument("-f", "--file", { help: "指定运行时配置文件" });
 
-module.exports=parser.parse_args();
+export default parser.parse_args();
