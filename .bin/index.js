@@ -17,5 +17,5 @@ require("@babel/register")({
   ]
 });
 require("@cyber-tools/cli-utils/initial");
-require("../configs/runtime.config");
-require("../main");
+require("../src/configs/runtime.config");
+require("../src/main");
